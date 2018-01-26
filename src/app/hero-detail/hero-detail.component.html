@@ -1,3 +1,4 @@
+<div>{{crumbUrl}}</div>
 <div *ngIf="hero">
   <h2>{{ hero.name | uppercase }} Details</h2>
   <div><span>id: </span>{{hero.id}}</div>
@@ -6,6 +7,6 @@
       <input [(ngModel)]="hero.name"/>
     </label>
   </div>
-  <div><span>ability: </span>{{hero.ability}}</div>
+  <div [class.red-text]="!hero.name.length"><span>ability: </span>{{hero.ability}}</div>
   <button (click)="goBack()">Back</button>
 </div>

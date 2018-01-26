@@ -7,6 +7,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
+  public crumbUrl = window.location.href;
 
   constructor(
     private backNav: Location

@@ -10,6 +10,7 @@ import { HeroService } from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
   heroes: Hero[];
+  public crumbUrl = window.location.href;
 
   constructor(private heroService: HeroService) { }
 
